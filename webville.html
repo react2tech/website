@@ -22,10 +22,10 @@
     <script>
 var drink = "water";
 var lyrics = "";
-var cans = 99;
+var cups = 99;
 
-while (cans > 0) {
-    lyrics += cans + " cans of " + drink + " on the wall <br>";
+while (cups > 0) {
+    lyrics += cups + " cups of " + drink + " on the wall <br>";
     /*
     lyrics = lyrics + cans + " cans of "
     + drink + "<br>";
@@ -37,7 +37,7 @@ while (cans > 0) {
     else {
         lyrics = lyrics + "No more cans of " + drink + " on the wall <br>";
     } */
-    cans -= 1;
+    cups -= 1;
 }
 document.getElementById("song").innerHTML = lyrics; 
 
