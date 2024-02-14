@@ -1,5 +1,18 @@
 <!DOCTYPE html>
 <hmtl>
+    <head>
+        <script>
+            function init() {
+                var loc = window.location.href;
+                var HTMLvalidLinkStr = 'http://validator.w3.org/check?uri=' + loc;
+                var CSSvalidLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' +
+                                        loc + '?profile=css3';
+                document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
+                document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
+            }
+            window.onload = init;
+            </script>
+    </head>
     <article>
         <h1>Signup form</h1>
         <p>
@@ -15,4 +28,8 @@
             <input type="date" name="dob" id="db"/>
         </p>
     </article>
+    <footer>
+        <a id="vLink1"><strong> HTML </strong> Valid!</a>
+        <a id="vLink2"><strong> HTML </strong> Valid!</a>
+    </footer>
 </hmtl>
