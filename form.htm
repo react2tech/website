@@ -21,8 +21,18 @@
     </head>
     <article>
     <form>
+        <form autocomplete="on">
         <fieldset name="personal info">
             <legend>Personal information:</legend>
+            <p>
+                <label for="tit">Title: </label>
+                <input list="titles" name="title" id="tit"/>
+                <datalist id="titles">
+                <option value="mr"></option>
+                <option value="ms"></option>
+                <option value="mrs"></option>
+                </datalist>
+            </p>
         <p>
             <label for="first">First name:</label>
             <input type="text" name="firstname" id="first"/>
