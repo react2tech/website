@@ -68,3 +68,5 @@ document.addEventListener("keydown", function(e) {
   else if (e.keyCode == 82)                // "r" key pressed
     nextItem();
 });
+
+window.onload = init;
