@@ -2,7 +2,7 @@
 <head></head>
 <body>
     <form>
-        <select name="myGrade">
+        <select name="myGrade"> Insert grade 
             <option>100</option>
             <option>99</option>
             <option>98</option>
@@ -16,6 +16,9 @@
             <option>90</option>
         </select>
     </form>
+    <p>
+        <input type="button" value="Check grade" onclick="checkgrade">
+    </p>
     <script>
         if(myGrade >= 91) {
             alert("Your grade is an A");
