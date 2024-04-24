@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <head>
     <script>
-        var myGrade
-        if(myGrade >= 90) {
-            alert("Your grade is an A");
+
+        function myGrade(form) {
+            var myGrade
+            if(myGrade >= 90) {
+                alert("Your grade is an A")
+            }
         }
     </script>
 </head>
@@ -24,6 +27,6 @@
         </select>
     </form>
     <p>
-        <input type="button" value="Enter" onclick="myGrade"
+        <input type="button" value="myGrade" onclick="myGrade(form)">
     </p>
 </body>
