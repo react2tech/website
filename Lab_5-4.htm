@@ -1,13 +1,8 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
-    <script>
-
-        function myGrade()   
-            if (myGrade >= 90)  {
-                alert("Your grade is an A")
-            }
-    </script>
+    <script src="mygrade.js"></script>
 </head>
 <body>
     <form>
@@ -25,8 +20,7 @@
             <option>90</option>
         </select>
     </form>
-    <p>
-        <input type="button" value="Enter" onclick="myGrade">
-    </p>
+    <p id="output">This is a paragraph</p>
+    <button onclick="mygrade()">Call function</button>
 </body>
 </html>
