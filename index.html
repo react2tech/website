@@ -70,25 +70,20 @@ window.onload = init;
         font-weight: bold;
     }
     @keyframes h1 {
-        0%  {
-            left: 0px;
-            right: 0px;
+        0% {
+            transition: 0%;
+    
         }
-
-        25% {
-            left: 0px;
-            right: 200px;
-        } 
-
         50% {
-            left: 0px;
-            right: 0px;
+            transition: 100%;
+        
         }
-
         100% {
-            left: 200px;
-            right: 0px
+            transition: 0px;
         }
+    }
+    h1 {
+    animation-duration: 4s;
     }
     li {
         border-style: dotted;
