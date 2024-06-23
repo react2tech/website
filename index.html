@@ -70,19 +70,11 @@ window.onload = init;
         font-weight: bold;
     }
     @keyframes h1 {
-        0% {
-            transition: 0%;
-    
-        }
-        50% {
-            transition: 100%;
-        
-        }
-        100% {
-            transition: 0px;
-        }
+        from(margin-left: 100%)
+        to(margin-left: 0%)
     }
     h1 {
+    animation: h1;
     animation-duration: 4s;
     }
     li {
