@@ -3,31 +3,35 @@
 <head>
     <meta charset="utf-8">
     <script>
-        function myGrade() {
-            if (myGrade >= 90):  {
-        alert("Your grade is an A")
-            }
-    }
-
+    function checkGrade(form) {
+  var myGrade = form.mySelect.options[form.mySelect.selectedIndex].text;
+}
+	if(myGrade >= 91) {
+     alert("Your grade is an A.");
+ }
     </script>
 </head>
 <body>
-    <form>
-        <select name="Enter"> 
-            <option>100</option>
-            <option>99</option>
-            <option>98</option>
-            <option>97</option>
-            <option>96</option>
-            <option>95</option>
-            <option>94</option>
-            <option>93</option>
-            <option>92</option>
-            <option>91</option>
-            <option>90</option>
-        </select>
+	<form name="myForm">
+    <select name="mySelect">
+    <option>100</option>
+    <option>99</option>
+    <option>98</option>
+    <option>97</option>
+    <option>96</option>
+    <option>95</option>
+    <option>94</option>
+    <option>93</option>
+    <option>92</option>
+    <option>91</option>
+    <option>90</option>
+    <option>89</option>
+    </select>
+
+	<p>
+    	<input type="button" value="check grade" onclick="checkGrade(form)">
+    </p>
+    
     </form>
-    <p id="output">This is a paragraph</p>
-    <button onclick="myGrade()">Call function</button>
 </body>
 </html>
