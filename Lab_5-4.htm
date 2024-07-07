@@ -3,12 +3,10 @@
 <head>
     <meta charset="utf-8">
     <script>
-    function checkGrade(form) {
-  var myGrade = form.mySelect.options[form.mySelect.selectedIndex].text;
-}
-	if(myGrade >= 91) {
-     alert("Your grade is an A.");
- }
+        function myGrade() {
+            if (mySelect >= 91)
+            alert("Your grade is an A")
+        }
     </script>
 </head>
 <body>
@@ -29,7 +27,7 @@
     </select>
 
 	<p>
-    	<input type="button" value="check grade" onclick="checkGrade(form)">
+    	<input type="button" value="check grade" onclick="(myGrade)">
     </p>
     
     </form>
