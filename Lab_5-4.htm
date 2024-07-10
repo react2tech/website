@@ -3,23 +3,30 @@
 <head>
     <meta charset="utf-8">
     <script>
-    	const txt = 'txt'
-        const btn = 'btn'
-        
         
         function myGrade() {
-            if ('txt' >= 91)
-            alert("Your grade is an A")
-            else 
-            alert("error")
+        	const txt1 = document.getElementById('tbuser');
+        	const btn1 = document.getElementById('btn1');
+            const out1 = document.getElementById('output1');
+            
+            function myGrade(){
+            out1.innerHTML = txt1.value;
+            }
+            
+            btn1.addEventListner('click',myGrade)
         }
     </script>
+    <style>
+    	.output {
+        border: solid 20px red;
+		}
+    </style>
 </head>
 <body>
-	<input type="text" id='txt'></input>
+	<input type="text" id='tbuser'>
 
-	<input type="button" id="btn" value="ok" onclick="myGrade()">
-
+	<input type="button" id="btn1" value="ok">
+    
+    <p class="output" id="output1"></p>
 </body>
 </html>
-
