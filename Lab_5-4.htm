@@ -3,24 +3,21 @@
 <head>
     <meta charset="utf-8">
     <style>
-    	.output {
-        border: solid 20px red;
-		}
+
     </style>
+    <script>
+        
+        function myGrade(){
+            alert("hello")
+        }
+    </script>
 </head>
 <body>
-    <label for="tbuser">Input</label>
-	<input type="text" id='tbuser'>
+<form>
+    <input type="number" id="num1">
+    <button onclick="myGrade"></button>
+</form>
 
-	<input type="button" value="ok" id="btn1" onclick="myGrade">
-    
-    <p class="output" id="output1"></p>
-
-<script>
-    function myGrade(){
-        alert("hello")
-    }
-</script>
 
 
 </body>
