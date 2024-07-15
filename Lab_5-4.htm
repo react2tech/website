@@ -2,18 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <script>
-        
-        function myGrade() {
-            document.addEventListener("DOMContentLoaded", btn1.addEventListener('click', myGrade)); {
-            const txt1 = document.getElementById('tbuser');
-        	const btn1 = document.getElementById('btn1');
-            const out1 = document.getElementById('output1');
-            out1.innerHTML = txt1.value
-            btn1.addEventListener('click', myGrade)
-        }
-        }
-    </script>
     <style>
     	.output {
         border: solid 20px red;
@@ -24,8 +12,16 @@
     <label for="tbuser">Input</label>
 	<input type="text" id='tbuser'>
 
-	<input type="button" value="ok" id="btn1">
+	<input type="button" value="ok" id="btn1" onclick="myGrade">
     
     <p class="output" id="output1"></p>
+
+<script>
+    function myGrade(){
+        alert("hello")
+    }
+</script>
+
+
 </body>
 </html>
